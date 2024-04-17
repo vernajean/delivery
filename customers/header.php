@@ -3,7 +3,7 @@ session_start();
 
 $base_url="http://".$_SERVER['SERVER_NAME'].'/delivery/';
 $id = $_SESSION['id'];
-include('conn.php');
+include('../conn.php');
 
 $sql = "SELECT * FROM accounts WHERE id = $id";
 $result = $connection->query($sql);

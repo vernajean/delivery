@@ -20,7 +20,7 @@
             // Add user login activity log
             $activity = 'Bought an item.';
             $logSql = "INSERT INTO aclogs (account_id, activity) VALUES ('$id','$activity')";
-            mysqli_query($conn, $logSql);
+            mysqli_query($connection, $logSql);
             echo "<script>
             alert('Product bought successfully!');
             window.location = 'my_orders.php';
