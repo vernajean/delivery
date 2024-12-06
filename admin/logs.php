@@ -73,7 +73,7 @@
                   <tbody>
 
                     <?php 
-                    $sql = "SELECT a.username,l.* FROM aclogs as l INNER JOIN accounts as a ON a.id = l.account_id ORDER BY l.date_created DESC";
+                    $sql = "SELECT a.username,l.* FROM logs as l INNER JOIN accounts as a ON a.id = l.account_id ORDER BY l.date_created DESC";
                     $result = $connection->query($sql);
                     if ($result->num_rows > 0) {
                         $count = 1;

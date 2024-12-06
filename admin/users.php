@@ -10,7 +10,7 @@
         if($result) {
             // Add user login activity log
             $activity = 'Password has been reset.';
-            $logSql = "INSERT INTO aclogs (account_id, activity) VALUES ('$id','$activity')";
+            $logSql = "INSERT INTO logs (account_id, activity) VALUES ('$id','$activity')";
             mysqli_query($connection, $logSql);
             echo "<script>
             alert('Password has been reset. The new password is 12345.');

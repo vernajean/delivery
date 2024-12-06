@@ -42,7 +42,7 @@
                 <tbody>
                     <?php $query1 = "SELECT ot.*,a.fullname,a.usertype FROM order_track as ot INNER JOIN accounts as a ON a.id = ot.account_id WHERE ot.order_id = '$oid'";
                     
-                        $result1 = $conn->query($query1);
+                        $result1 = $connection->query($query1);
                         while ($row1 = $result1->fetch_assoc()) { ?>
                     <tr>
                         <td>

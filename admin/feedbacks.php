@@ -37,7 +37,7 @@
 
                     <?php 
                     $sql = "SELECT * FROM ratings as r INNER JOIN orders as o ON o.id=r.order_id INNER JOIN product as p ON p.id = o.product_id INNER JOIN accounts as a ON a.id=r.account_id";
-                    $result = $conn->query($sql);
+                    //$result = $conn->query($sql);
                     if ($result->num_rows > 0) {
                       while ($row = $result->fetch_assoc()) {
                     ?>

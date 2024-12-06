@@ -29,7 +29,7 @@
     <!--===========================   MAIN   =====================================-->
 
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper bg-pink">
+<div class="content-wrapper bg-light yellow">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">

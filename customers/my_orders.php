@@ -19,7 +19,7 @@
         if ($result) {
             // Add user login activity log
             $activity = 'Bought an item.';
-            $logSql = "INSERT INTO aclogs (account_id, activity) VALUES ('$id','$activity')";
+            $logSql = "INSERT INTO logs (account_id, activity) VALUES ('$id','$activity')";
             mysqli_query($connection, $logSql);
             echo "<script>
             alert('Product bought successfully!');
@@ -57,7 +57,7 @@
 ?>
     <!--===========================   MAIN   =====================================-->
 
-<div class="content-wrapper bg-pink">
+<div class="content-wrapper bg-light yellow">
     <section class="content-header">
       <div class="container-fluid">
       </div>

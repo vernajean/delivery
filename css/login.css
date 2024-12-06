@@ -29,7 +29,7 @@ body{
   position: relative;
   font-size: 22px;
   font-weight: 600;
-  color: #333;
+  color: #bc0808;
 }
 .wrapper h2::before{
   content: '';
